@@ -25,4 +25,10 @@ public class OrderController {
         return restTemplate.getForObject(serverUrl + "/payment/nacos/" + id,String.class);
     }
 
+    @GetMapping(value = "/testdev")
+    public String testDev(){
+        System.out.println("分支进行一个修改");
+        return "dev";
+    }
+
 }
