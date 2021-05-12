@@ -25,4 +25,9 @@ public class OrderController {
         return restTemplate.getForObject(serverUrl + "/payment/nacos/" + id,String.class);
     }
 
+    @GetMapping(value = "/test01")
+    public String test01(){
+        return "helloworld";
+    }
+
 }
