@@ -1,0 +1,20 @@
+server:
+  port: 8001
+
+#声明微服务模块名称
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+
+eureka:
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eureka7001.com:7001/eureka/ #单机版
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true

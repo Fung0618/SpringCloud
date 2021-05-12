@@ -1,0 +1,11 @@
+server:
+  port: 80
+
+#声明微服务模块名称
+spring:
+  application:
+    name: cloud-consumer-service
+  cloud:
+    zookeeper:
+      #zookeeper的虚拟机中的ip以及端口号
+      connect-string: 192.168.149.130:2181
