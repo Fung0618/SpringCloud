@@ -34,7 +34,9 @@ public class OrderController {
     @GetMapping(value = "/testdev2")
     public String testDev2(){
         System.out.println("分支进行第一个修改");
+        System.out.println("dev修改");
         System.out.println("master修改");
+        System.out.println("dev修改");
         return "dev2";
     }
 
