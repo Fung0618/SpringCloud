@@ -40,7 +40,7 @@ public class OrderController {
         return "dev2";
     }
 
-    @GetMapping(value = "/test01")
+    @GetMapping(value = "/test02")
     public String test01(){
         return "helloworld";
     }
